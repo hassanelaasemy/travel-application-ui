@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "TravelApp",
+    "slug": "app3",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icons/iconapk.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/icons/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs access to location when open."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icons/iconapk.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.hassanelaasemy.app3",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "INTERNET"
+      ],
+      "versionCode": 1 ,
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyA1eycyDep7QqhHxViT2uf2skwMny7EhW0"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/icons/iconapk.png"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "7e52a179-ab61-4d9f-8757-5b7002e8619a"
+      }
+    }
+  }
+}
